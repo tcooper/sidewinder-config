@@ -1,0 +1,57 @@
+<?xml version="1.0" standalone="no"?>
+
+	<graph roll="sandboa-common">
+
+	<description>
+	Sandboa-specific configuration
+	</description>
+
+	<!-- Graph Ordering for Kickstart Generation -->
+
+	<!-- Common -->
+	<edge from="base">
+		<to>sandboa-common</to>
+	</edge>
+	<order head="base">
+		<tail>sandboa-common</tail>
+	</order>
+
+	<!-- All Clients -->
+	<edge from="client">
+		<to>sandboa-common-client</to>
+	</edge>
+	<order head="client">
+		<tail>sandboa-common-client</tail>
+	</order>
+
+	<edge from="client">
+		<to>devel</to>
+	</edge>
+
+	<!-- Front end -->
+	<edge from="server">
+		<to>sandboa-server</to>
+	</edge>
+	<order head="sandboa-server">
+		<tail>server</tail>
+	</order>
+
+	<!-- Login nodes -->
+	<edge from="login">
+		<to>sandboa-login</to>
+	</edge>
+	<order head="sandboa-login">
+		<tail>login</tail>
+	</order>
+	
+	<!-- Compute nodes -->
+	<edge from="compute">
+		<to>sandboa-compute</to>
+	</edge>
+	<order head="compute">
+		<tail>sandboa-compute</tail>
+	</order>
+
+
+</graph>
+

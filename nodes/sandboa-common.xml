@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="no"?>
+
+<kickstart roll="sandboa-config">
+
+<description>
+Sandboa-specific configuration common to all nodes.
+</description>
+
+<copyright>
+Copyright (c) 2000 - 2014 The Regents of the University of California.
+All rights reserved. Rocks(r) v6.1.1 www.rocksclusters.org
+</copyright>
+
+<changelog>
+</changelog>
+
+<package>dstat</package>
+<package>iotop</package>
+<package>libaio-devel</package>
+<package>perf</package>
+<package>strace</package>
+<package>sysstat</package>
+<package>tree</package>
+<package>vim</package>
+
+<post>
+
+<file name="/etc/motd" mode="append">
+
+                                  WELCOME TO
+                 ____ ___    _  __ ___     ___   ____   ___ 
+                / __// _ |  / |/ // _ \   / _ ) / __ \ / _ |
+               _\ \ / __ | /    // // /  / _  |/ /_/ // __ |
+              /___//_/ |_|/_/|_//____/  /____/ \____//_/ |_|
+
+</file>
+
+</post>
+
+</kickstart> 
+

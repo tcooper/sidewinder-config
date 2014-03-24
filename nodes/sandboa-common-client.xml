@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="no"?>
+
+<kickstart roll="sandboa-config">
+
+<description>
+Sandboa-specific configuration common to all nodes, except the front end.
+</description>
+
+<copyright>
+Copyright (c) 2000 - 2014 The Regents of the University of California.
+All rights reserved. Rocks(r) v6.1.1 www.rocksclusters.org
+</copyright>
+
+<changelog>
+</changelog>
+
+<package>sqlite-devel</package>
+<package>ruby-sqlite3</package>
+
+<post>
+
+<!-- X11 is installed, but run in multiuser with the server off -->
+sed -i s/id:5:initdefault:/id:3:initdefault:/ /etc/inittab
+
+</post>
+
+</kickstart> 
+

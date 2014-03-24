@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="no"?>
+
+<kickstart roll="sandboa-config">
+
+<description>
+Sandboa-specific server configuration.
+</description>
+
+<copyright>
+Copyright (c) 2000 - 2014 The Regents of the University of California.
+All rights reserved. Rocks(r) v6.1.1 www.rocksclusters.org
+</copyright>
+
+<changelog><![CDATA[]]></changelog>
+
+<package>screen</package>
+
+<post>
+
+<!-- Install X11 for libraries. Run level set in sandboa-common-client.xml -->
+/opt/rocks/bin/rocks set appliance attr compute x11 True
+/opt/rocks/bin/rocks set appliance attr login x11 True
+
+</post>
+
+</kickstart> 
+
