@@ -1,0 +1,16 @@
+#!/bin/bash
+
+/opt/rocks/bin/rocks "add host" sandboa-login cpus=1 rack=0 rank=0 membership=Login os=linux
+/opt/rocks/bin/rocks set host runaction sandboa-login action=os
+/opt/rocks/bin/rocks set host installaction sandboa-login action=install
+/opt/rocks/bin/rocks set host boot sandboa-login action=os
+/opt/rocks/bin/rocks add host interface sandboa-login eth0
+/opt/rocks/bin/rocks set host interface ip sandboa-login eth0 10.1.255.254
+/opt/rocks/bin/rocks set host interface name sandboa-login eth0 sandboa-login
+/opt/rocks/bin/rocks set host interface mac sandboa-login eth0 08:00:27:45:f5:5f
+/opt/rocks/bin/rocks set host interface subnet sandboa-login eth0 private
+/opt/rocks/bin/rocks add host interface sandboa-login eth1
+/opt/rocks/bin/rocks set host interface ip sandboa-login eth1 192.168.16.16
+/opt/rocks/bin/rocks set host interface name sandboa-login eth1 sandboa-login
+/opt/rocks/bin/rocks set host interface mac sandboa-login eth1 08:00:27:c0:39:c5
+/opt/rocks/bin/rocks set host interface subnet sandboa-login eth1 public
