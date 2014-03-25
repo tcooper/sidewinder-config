@@ -1,5 +1,5 @@
 ROLLNAME	= sandboa-config
-VERSION		= 1.0
+VERSION		= 6.1.1
 RELEASE		= `git rev-parse --short HEAD`
 COLOR		= aquamarine
 
