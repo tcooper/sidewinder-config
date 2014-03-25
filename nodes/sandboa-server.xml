@@ -24,6 +24,10 @@ All rights reserved. Rocks(r) v6.1.1 www.rocksclusters.org
 <!-- Set login appliances to use their public interface as their primary interface -->
 /opt/rocks/bin/rocks set appliance attr login primary_net public
 
+<file name="/etc/ssh/authorized_keys" mode="append">
+ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA0i1iMeI0iC1naMnxHFpQbCx09j0anka42ynLv2v8rYKAW4Z9rTreLAirDK4WSxIhfd28ui9R2PfQPhvtaerMJ33r6VpPve+gaLbD5MPZyYRPbu3shdj7uD9qezDA/rnN/SXVRXAJtjk8WwA0ENb2iqqGDZZTX1uu83ElDu4ZXAtW0nAVOqcLwfyyFect5PnD+oNjphKCZSkRm7rb5te2bnev8IYOb91XJKfaOlDpznFkDEWpo4hVkf/5U2sfKEnY4GKEnjcAKV+dFzFhRz6uyW7i2PpGlgV7iQbWXJk0k9kw4KhzuOlmku4sRFw5RAchAelfE3SGHSK9+dbd5hVmUw== tcooper@sdsc.edu
+</file>
+
 </post>
 
 </kickstart> 
