@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="no"?>
 
-<kickstart roll="sandboa-config">
+<kickstart>
 
 <description>
 Sandboa-specific configuration common to all nodes, except the front end.
