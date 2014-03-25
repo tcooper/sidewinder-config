@@ -21,6 +21,9 @@ All rights reserved. Rocks(r) v6.1.1 www.rocksclusters.org
 /opt/rocks/bin/rocks set appliance attr compute x11 True
 /opt/rocks/bin/rocks set appliance attr login x11 True
 
+<!-- Set login appliances to use their public interface as their primary interface -->
+/opt/rocks/bin/rocks set appliance attr login primary_net public
+
 </post>
 
 </kickstart> 
