@@ -1,4 +1,3 @@
-# sandboa devel cluster config
+# sidewinder cluster config
 
-This is a develop configuration repository for the *sandboa* development cluster.
-
+This is a system configuration repository for the *sidewinder* development cluster.

@@ -3,25 +3,25 @@
 	<graph>
 
 	<description>
-	Sandboa-specific configuration
+	Sidewinder-specific configuration
 	</description>
 
 	<!-- Graph Ordering for Kickstart Generation -->
 
 	<!-- Common -->
 	<edge from="base">
-		<to>sandboa-common</to>
+		<to>sidewinder-common</to>
 	</edge>
 	<order head="base">
-		<tail>sandboa-common</tail>
+		<tail>sidewinder-common</tail>
 	</order>
 
 	<!-- All Clients -->
 	<edge from="client">
-		<to>sandboa-common-client</to>
+		<to>sidewinder-common-client</to>
 	</edge>
 	<order head="client">
-		<tail>sandboa-common-client</tail>
+		<tail>sidewinder-common-client</tail>
 	</order>
 
 	<edge from="client">
@@ -30,26 +30,26 @@
 
 	<!-- Front end -->
 	<edge from="server">
-		<to>sandboa-server</to>
+		<to>sidewinder-server</to>
 	</edge>
-	<order head="sandboa-server">
+	<order head="sidewinder-server">
 		<tail>server</tail>
 	</order>
 
 	<!-- Login nodes -->
 	<edge from="login">
-		<to>sandboa-login</to>
+		<to>sidewinder-login</to>
 	</edge>
-	<order head="sandboa-login">
+	<order head="sidewinder-login">
 		<tail>login</tail>
 	</order>
 	
 	<!-- Compute nodes -->
 	<edge from="compute">
-		<to>sandboa-compute</to>
+		<to>sidewinder-compute</to>
 	</edge>
 	<order head="compute">
-		<tail>sandboa-compute</tail>
+		<tail>sidewinder-compute</tail>
 	</order>
 
 

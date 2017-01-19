@@ -1,5 +1,5 @@
-ROLLNAME	= sandboa-config
-VERSION		= 6.1.1
+ROLLNAME	= sidewinder-config
+VERSION		= 6.2
 RELEASE		= `git rev-parse --short HEAD`
 COLOR		= aquamarine
 
